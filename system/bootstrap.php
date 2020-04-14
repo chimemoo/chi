@@ -25,9 +25,6 @@
         }
     });
 
-    // LOAD EXCEPTIONS
-    $exceptions = new Exceptions;
-
     Router::route($url);
 
     

@@ -33,6 +33,10 @@ class ComposerStaticInit3318892356063387585f88640de98f87
             'Psr\\Log\\' => 8,
             'PhpOption\\' => 10,
         ),
+        'L' => 
+        array (
+            'League\\Plates\\' => 14,
+        ),
         'F' => 
         array (
             'FastRoute\\' => 10,
@@ -79,6 +83,10 @@ class ComposerStaticInit3318892356063387585f88640de98f87
         'PhpOption\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpoption/phpoption/src/PhpOption',
+        ),
+        'League\\Plates\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/league/plates/src',
         ),
         'FastRoute\\' => 
         array (

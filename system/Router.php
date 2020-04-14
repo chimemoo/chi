@@ -3,11 +3,12 @@
 class Router {
 
     public static function route($url){
-    
+        
+        // Defining The Route form Web.php and Api.php
         $dispatcher = FastRoute\simpleDispatcher(function(FastRoute\RouteCollector $route) {
             require_once(ROOT . DS . 'app' . DS . 'Routers' . DS . 'Web.php');
+            require_once(ROOT . DS . 'app' . DS . 'Routers' . DS . 'Api.php');
         });
-
         
         // Fetch method and URI from somewhere
         $httpMethod = $_SERVER['REQUEST_METHOD'];
@@ -34,7 +35,7 @@ class Router {
                 list($class,$method) = explode("*", $handler);
                 call_user_func_array(array(new $class, $method),$vars);
         }
-        
-        
+           
     }
+    
 }
