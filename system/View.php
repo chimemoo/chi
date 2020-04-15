@@ -17,6 +17,6 @@ class View {
     public function render()
     {
         $renderView = $this->templates;
-        echo $renderView->render($this->view,$this->data);
+        return $renderView->render($this->view,$this->data);
     }
 }

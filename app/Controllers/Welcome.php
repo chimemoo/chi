@@ -9,8 +9,7 @@ class Welcome extends Chi {
             'name' => 'Chi Framework',
             'created_at' => 'April 13 2020'
         ];
-        $view = new View('welcome',$data);
-        return $view->render();
+        $this->View('welcome',$data);
     }
 
 }
