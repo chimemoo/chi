@@ -3,7 +3,6 @@
 class Router {
 
     public static function route($url){
-        
         // Defining The Route form Web.php and Api.php
         $dispatcher = FastRoute\simpleDispatcher(function(FastRoute\RouteCollector $route) {
             require_once(ROOT . DS . 'app' . DS . 'Routers' . DS . 'Web.php');

@@ -21,7 +21,7 @@
             require_once ROOT . DS . 'app' . DS . 'Controllers' . DS . $className . '.php' ;
         }
         elseif(file_exists(ROOT . DS . 'app' . DS . 'Models' . DS . $className . '.php')){
-            require_once ROOT . DS . 'app' . DS . 'Controllers' . DS . $className . '.php' ;
+            require_once ROOT . DS . 'app' . DS . 'Models' . DS . $className . '.php' ;
         }
     });
 

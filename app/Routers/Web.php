@@ -1,3 +1,3 @@
 <?php 
 
-$route->addRoute('GET', '/welcome', 'Welcome*index');
+$route->get('/welcome', 'Welcome*index');
